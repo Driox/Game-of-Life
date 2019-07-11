@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example Scala.js application</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <style>
+    body{
+      background-color: #000
+    }
+    .canvas{
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body style="margin: 0px">
+
+<div>
+    <canvas style="display: block" id="canvas" width="400" height="400" class="canvas" />
+</div>
+
+<script type="text/javascript" src="../game-of-life-fastopt.js"></script>
+<script type="text/javascript" src="/workbench.js"></script>
+<script>
+    example.ScalaJSExample().main(document.getElementById('canvas'));
+</script>
+</body>
+</html>
