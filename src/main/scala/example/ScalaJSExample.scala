@@ -20,8 +20,7 @@ object ScalaJSExample {
       Color(255, 255, 180)
     )
 
-    val initial_board = InitialBoard.simple(400)
-    var current_board = initial_board
+    var current_board = InitialBoard.simple(400)
     val gui = BoardGui(ctx, background, 8)
 
     def run = {

@@ -30,9 +30,6 @@ object Runner {
       case (false, x) if (x == 3)          => cell.copy(is_alive = true)
       case _                               => cell
     }
-    if(cell.is_alive != result.is_alive){
-      println(s"compute_cell_is_alive[$x, $y] ${board.cell(x)(y)} --> ${result}" )
-    }
     result
   }
 }
