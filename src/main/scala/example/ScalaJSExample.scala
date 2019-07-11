@@ -13,6 +13,7 @@ object ScalaJSExample {
   def main(canvas: html.Canvas): Unit = {
     val ctx = canvas.getContext("2d").asInstanceOf[dom.CanvasRenderingContext2D]
 
+    val speed = 100
     val size = 400
     val background = Background(
       size,
@@ -28,6 +29,6 @@ object ScalaJSExample {
       gui.render(current_board)
     }
 
-    dom.window.setInterval(() => run, 500)
+    dom.window.setInterval(() => run, speed)
   }
 }
