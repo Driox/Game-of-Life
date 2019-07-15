@@ -18,15 +18,3 @@ case class Board(cells: Array[Array[Cell]]) {
     case (x, y)                                    => cells(x)(y)
   }
 }
-
-object InitialBoard {
-
-  def empty(width: Int, height: Int): Board = Board(Array.tabulate(width, height)((x, y) => Cell(x, y, false)))
-  def empty(size: Int): Board = empty(size, size)
-
-  def simple(size: Int): Board =
-    empty(size)
-      .update(Cell(19, 20, true))
-      .update(Cell(20, 20, true))
-      .update(Cell(21, 20, true))
-}

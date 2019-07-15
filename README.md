@@ -1,3 +1,10 @@
+# This is en implementation of Game of life ( https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life )
+
+* The basic example is a Cannon
+
+the InitialBoard.scala file contains some sample boards, feel free to add others
+
+
 # To run
 
 * sbt ~fastOptJS
@@ -7,7 +14,8 @@
 
 * sbt fullOptJS
 
-# Example Scala.js application
+
+# Scala JS doc
 
 This is a slightly less barebone example of an application written in
 [Scala.js](http://www.scala-js.org/). In particular, it links
